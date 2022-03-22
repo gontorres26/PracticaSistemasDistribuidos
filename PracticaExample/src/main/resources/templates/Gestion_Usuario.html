@@ -1,0 +1,45 @@
+{{>header}}
+<div class="clearfix"></div>
+
+<div class="row">
+	<div class="col-lg-1"></div>
+
+	<div class="col-lg-10">
+		<article class="articulo">
+			<table class="table">
+				<thead class="thead-dark">
+					<tr>
+						<th scope="col">Identificador de Usuario</th>
+						<th scope="col">Nombre Completo</th>
+						<th scope="col">Estado</th>
+					</tr>
+				</thead>
+				<tbody>
+					{{#postList}}
+					<tr>
+						<td>{{id}}</td>
+						<td>{{nombreCompleto}}</td>
+						<td>{{estado}}</td>
+					</tr>
+					{{/postList}}
+				</tbody>
+			</table>
+		</article>
+	</div>
+	<div class="col-lg-1"></div>
+</div>
+<div class="row">
+	<div class="col-lg-1"></div>
+	<div class="col-lg-5">
+		<a href="/nuevoUsuario">
+			<button type="button" class="btn btn-primary btn-lg btn-block">Añadir nuevo Usuario</button>
+		</a>
+	</div>
+	<div class="col-lg-5">
+		<a href="dar_De_Baja_Usuario.html">
+			<button type="button" class="btn btn-primary btn-lg btn-block">Dar de baja Usuario</button>
+		</a>
+	</div>
+	<div class="col-lg-1"></div>
+</div>
+{{>footer}}

@@ -1,0 +1,57 @@
+{{>header}}
+<div class="clearfix"></div>
+<div class="row">
+	<div class="col-lg-3">
+
+	</div>
+	<div class="col-lg-12">
+		<section id="contenido">
+			<div id="imagen">
+				<img src="https://icon-library.com/images/user-icon-jpg/user-icon-jpg-17.jpg" class="img-thumbnail"
+					alt="User_image" width="250" height="250" style="display: block;
+                            margin-left: auto;
+                            margin-right: auto;">
+			</div>
+			<h3 style="text-align: center;">{{nombreUsuario}}</h3>
+
+			<div class="col-lg-1"></div>
+			<div class="col-lg-10">
+				<table class="table">
+					<thead>
+						<tr>
+							<th>Identificador</th>
+							<th>Fecha de Alta</th>
+							<th>Estado</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="info">
+							<td>{{identificador}}</td>
+							<td>{{fechaAlta}}</td>
+							<td>{{estado}}</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+		</section>
+	</div>
+	<div class="col-lg-3">
+
+	</div>
+</div>
+<div class="row">
+	<div class="col-lg-1"></div>
+	<div class="col-lg-5">
+		<a href="/modificarUsuario/{id}">
+			<button type="button" class="btn btn-primary btn-lg btn-block">Modificar Usuario</button>
+		</a>
+	</div>
+	<div class="col-lg-5">
+		<a href="/bajaUsuario/{id}">
+			<button type="button" class="btn btn-primary btn-lg btn-block">Eliminar Usuario</button>
+		</a>
+	</div>
+	<div class="col-lg-1"></div>
+</div>
+{{>footer}}
